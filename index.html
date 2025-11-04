@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Hut - Live Order Preview</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍕 Pizza Hut Order Generator</h1>
+    <p>Isi formulir di bawah untuk melihat pratinjau pesanan pizza kamu secara langsung!</p>
+  </header>
+
+  <main>
+    <!-- Panel Kontrol -->
+    <form id="orderForm" class="panel">
+      <h2>Form Pemesanan</h2>
+
+      <label for="nama">Nama Pemesan:</label>
+      <input type="text" id="nama" placeholder="Masukkan nama kamu" required>
+
+      <label for="ukuran">Ukuran Pizza:</label>
+      <select id="ukuran" required>
+        <option value="">-- Pilih Ukuran --</option>
+        <option value="Small">Small</option>
+        <option value="Medium">Medium</option>
+        <option value="Large">Large</option>
+      </select>
+
+      <label for="topping">Topping Favorit:</label>
+      <input type="text" id="topping" placeholder="Contoh: Keju, Sosis, Jamur">
+
+      <label for="catatan">Catatan Tambahan:</label>
+      <textarea id="catatan" rows="3" placeholder="Tulis catatan untuk pesananmu"></textarea>
+
+      <!-- Tombol baru -->
+      <button type="submit" id="submitBtn">Kirim Pesanan</button>
+    </form>
+
+    <!-- Area Pratinjau -->
+    <section id="preview" class="preview">
+      <h2>🍕 Pratinjau Pesanan</h2>
+      <p><strong>Nama Pemesan:</strong> <span id="preview-nama">-</span></p>
+      <p><strong>Ukuran Pizza:</strong> <span id="preview-ukuran">-</span></p>
+      <p><strong>Topping:</strong> <span id="preview-topping">-</span></p>
+      <p><strong>Catatan:</strong> <span id="preview-catatan">-</span></p>
+
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Pizza Order Live Preview by Lilis</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
