@@ -5,7 +5,7 @@
   
 
 
-## 📋 Checklist Fitur yang Telah Diimplementasikan
+## Checklist Fitur yang Telah Diimplementasikan
 
 - [x] Repositori GitHub sudah dibuat  
 - [x] Melakukan minimal 3 commit  
